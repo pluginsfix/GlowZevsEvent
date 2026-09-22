@@ -1,0 +1,219 @@
+settings:
+  zero: "0"
+  unknown: "отсутствует"
+  world: "world"
+  yOffset: 125
+  searchMax: 50
+
+  time:
+    enable: true
+    start:
+      - "12:00"
+      - "00:00"
+    zone: "Europe/Moscow"
+    format: "HH:mm"
+    minPlayers: 20
+
+  bossbarAction:
+    safeFloat: 1.0
+    safeOverlay: "PROGRESS"
+    safeColor: "YELLOW"
+
+  titleAction:
+    oneD: 1500
+    twoD: 3000
+    threeD: 1500
+
+  soundAction:
+    safeVolume: 0.5
+    safePitch: 1.0
+
+  particleAction:
+    safeCount: 20
+    safeOffSetX: 0.1
+    safeOffSetY: 0.1
+    safeOffSetZ: 0.1
+    safeSpeed: 0.1
+
+  schematic:
+    name: "ship.schem"
+    batchSize: 100
+    clearDelay: 5
+
+  distance:
+    min: 100
+    max: 2100
+    rgSize: 30
+
+  hologramProvider: "DecentHolograms"
+
+  bossbar:
+    color: "YELLOW"
+    style: "SOLID"
+
+  stages:
+    1:
+      bossbar: "&#FB9C08Гнев зевса &8| &fДо конца стадии&7: &#FB9C08{timeLeft}&f сек &8| &fКоординаты&7: &#FB9C08{x} {y} {z} &8| &fPvP&7: &#FB9C08выкл"
+      duration: 300
+      lightningInterval: 3
+      lightningRadius: 6
+      lightningDestroyingBlocks:
+        - "WHITE_WOOL"
+        - "CYAN_WOOL"
+        - "SPRUCE_LOG"
+        - "SPRUCE_FENCE"
+        - "DARK_OAK_STAIRS"
+        - "ACACIA_WOOD"
+        - "ACACIA_TRAPDOOR"
+        - "SNOW"
+      flags:
+        PVP: DENY
+        BUILD: DENY
+        USE: ALLOW
+        POTION-SPLASH: DENY
+        PISTONS: DENY
+        FALL-DAMAGE: DENY
+    2:
+      bossbar: "&#FB9C08Гнев зевса &8| &fДо конца стадии&7: &#FB9C08{timeLeft}&f сек &8| &fКоординаты&7: &#FB9C08{x} {y} {z} &8| &fPvP&7: &#FB9C08выкл"
+      duration: 180
+      lightningInterval: 7
+      lightningRadius: 6
+      skyDropInterval: 5
+      skyDropRadius: 5
+      lightningDestroyingBlocks:
+        - "WHITE_WOOL"
+        - "CYAN_WOOL"
+        - "SPRUCE_LOG"
+        - "SPRUCE_FENCE"
+        - "ACACIA_WOOD"
+        - "ACACIA_TRAPDOOR"
+        - "DARK_OAK_STAIRS"
+        - "SNOW"
+      flags:
+        CHEST-ACCESS: ALLOW
+        PVP: DENY
+    3:
+      bossbar: "&#FB9C08Гнев зевса &8| &fДо конца стадии&7: &#FB9C08{timeLeft}&f сек &8| &fКоординаты&7: &#FB9C08{x} {y} {z} &8| &fPvP&7: &#FB9C08вкл"
+      duration: 60
+      skyDropInterval: 5
+      skyDropRadius: 3
+      chestDisguiseItems:
+        - "WHITE_DYE;&4&l&kN/A"
+        - "ORANGE_DYE;&4&l&kN/A"
+        - "MAGENTA_DYE;&4&l&kN/A"
+        - "LIGHT_BLUE_DYE;&4&l&kN/A"
+        - "YELLOW_DYE;&4&l&kN/A"
+        - "LIME_DYE;&4&l&kN/A"
+        - "PINK_DYE;&4&l&kN/A"
+        - "GRAY_DYE;&4&l&kN/A"
+        - "LIGHT_GRAY_DYE;&4&l&kN/A"
+        - "CYAN_DYE;&4&l&kN/A"
+        - "PURPLE_DYE;&4&l&kN/A"
+        - "BLUE_DYE;&4&l&kN/A"
+        - "BROWN_DYE;&4&l&kN/A"
+        - "GREEN_DYE;&4&l&kN/A"
+        - "RED_DYE;&4&l&kN/A"
+        - "BLACK_DYE;&4&l&kN/A"
+      chestTakeCooldown: 1100
+      chests:
+        1:
+          offSetX: -1
+          offSetY: 0
+          offSetZ: 0
+          offSetYaw: -90.0
+          name: "&fСундук зевса"
+          hologram:
+            - "&#FB9C08⚡ &fСундук зевса &#FB9C08⚡"
+            - "&7Успевай залутать!"
+        2:
+          offSetX: 7
+          offSetY: 0
+          offSetZ: -1
+          offSetYaw: 90.0
+          name: "&fСундук зевса"
+          hologram:
+            - "&#FB9C08⚡ &fСундук зевса &#FB9C08⚡"
+            - "&7Успевай залутать!"
+        3:
+          offSetX: 7
+          offSetY: 0
+          offSetZ: 1
+          offSetYaw: 90.0
+          name: "&fСундук зевса"
+          hologram:
+            - "&#FB9C08⚡ &fСундук зевса &#FB9C08⚡"
+            - "&7Успевай залутать!"
+        4:
+          offSetX: 15
+          offSetY: 0
+          offSetZ: 0
+          offSetYaw: 90.0
+          name: "&fСундук зевса"
+          hologram:
+            - "&#FB9C08⚡ &fСундук зевса &#FB9C08⚡"
+            - "&7Успевай залутать!"
+        5:
+          offSetX: 11
+          offSetY: -3
+          offSetZ: 0
+          offSetYaw: 90.0
+          name: "&fСундук зевса"
+          hologram:
+            - "&#FB9C08⚡ &fСундук зевса &#FB9C08⚡"
+            - "&7Успевай залутать!"
+        6:
+          offSetX: -7
+          offSetY: -3
+          offSetZ: 1
+          offSetYaw: -90.0
+          name: "&fСундук зевса"
+          hologram:
+            - "&#FB9C08⚡ &fСундук зевса &#FB9C08⚡"
+            - "&7Успевай залутать!"
+        7:
+          offSetX: -7
+          offSetY: -3
+          offSetZ: -1
+          offSetYaw: -90.0
+          name: "&fСундук зевса"
+          hologram:
+            - "&#FB9C08⚡ &fСундук зевса &#FB9C08⚡"
+            - "&7Успевай залутать!"
+      flags:
+        PVP: ALLOW
+        POTION-SPLASH: ALLOW
+
+actions:
+  minPlayers:
+    - "[Broadcast] &#FB9C08╔"
+    - "[Broadcast] &#FB9C08║ &fНа сервере &#FB9C08недостаточно &fигроков"
+    - "[Broadcast] &#FB9C08║ &fПоэтому &#FB9C08гнев &fзевса отменён!"
+    - "[Broadcast] &#FB9C08╚"
+    - "[Sound] ENTITY_VILLAGER_NO:0.75:1.0"
+  start:
+    - "[Broadcast] &#FB9C08╔"
+    - "[Broadcast] &#FB9C08║ &fТяга &#FB9C08зевса&f была &#FB9C08призвана&f на"
+    - "[Broadcast] &#FB9C08║ &fКоординатах&7: &#FB9C08{x} {y} {z}"
+    - "[Broadcast] &#FB9C08╠"
+    - "[Broadcast] &#FB9C08║ &fСтадия &#FB9C08I &7- &fPvP &#FB9C08выключено"
+    - "[Broadcast] &#FB9C08║ &fСтадия &#FB9C08II &7- &fPvP &#FB9C08выключено"
+    - "[Broadcast] &#FB9C08║ &fСтадия &#FB9C08III &7- &fPvP &#FB9C08включено"
+    - "[Broadcast] &#FB9C08╚"
+  stop:
+    - "[Broadcast] &#FB9C08╔"
+    - "[Broadcast] &#FB9C08║ &fВыжившие на &#FB9C08борту&f зевса, спасайтесь"
+    - "[Broadcast] &#FB9C08║ &fБегством, ведь &#FB9C08корабль&f разрушается!"
+    - "[Broadcast] &#FB9C08╚"
+  stage2:
+    - "[Broadcast] &#FB9C08╔"
+    - "[Broadcast] &#FB9C08║ &fСтадия &#FB9C08тяги зевса &fбыла &#FB9C08обновлена"
+    - "[Broadcast] &#FB9C08║ &fТекущая стадия &#FB9C08II &7- &fPvP &#FB9C08выключено"
+    - "[Broadcast] &#FB9C08╚"
+  stage3:
+    - "[Broadcast] &#FB9C08╔"
+    - "[Broadcast] &#FB9C08║ &fСтадия &#FB9C08тяги зевса &fбыла &#FB9C08обновлена"
+    - "[Broadcast] &#FB9C08║ &fТекущая стадия &#FB9C08III &7- &fPvP &#FB9C08включено"
+    - "[Broadcast] &#FB9C08╚"
+  chestSpawn:
+    - "[Effect] WITHER_SPAWNED"
+    - "[Sound] ENTITY_WITHER_SHOOT:0.1:0.9"

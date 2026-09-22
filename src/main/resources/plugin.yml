@@ -1,0 +1,20 @@
+name: GlowZevsEvent
+version: '${project.version}'
+main: pluginsfix.glowzevsevent.GlowZevsEvent
+api-version: '1.16'
+author: pluginsfix
+softdepend:
+  - WorldGuard
+  - WorldEdit
+  - FastAsyncWorldEdit
+  - DecentHolograms
+  - PlaceholderAPI
+commands:
+  glowzevsevent:
+    description: Main command for GlowZevsEvent
+    aliases:
+      - zevs
+      - zevsevent
+      - gzevs
+      - hzevsevent
+    permission: glowzevsevent.admin

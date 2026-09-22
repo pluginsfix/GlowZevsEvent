@@ -1,0 +1,50 @@
+drops:
+  lightning:
+    - material: GOLD_NUGGET
+      amount: 3
+      chance: 40.0
+      name: "&#FFFF00◆ Осколок молнии"
+    - material: IRON_INGOT
+      amount: 2
+      chance: 50.0
+    - material: DIAMOND
+      amount: 1
+      chance: 15.0
+  skydrop:
+    - material: GOLDEN_APPLE
+      amount: 1
+      chance: 35.0
+    - material: ENDER_PEARL
+      amount: 2
+      chance: 45.0
+    - material: EMERALD
+      amount: 3
+      chance: 40.0
+    - material: DIAMOND_BLOCK
+      amount: 1
+      chance: 10.0
+    - material: TOTEM_OF_UNDYING
+      amount: 1
+      chance: 5.0
+  chest:
+    - material: NETHERITE_INGOT
+      amount: 1
+      chance: 15.0
+    - material: ENCHANTED_GOLDEN_APPLE
+      amount: 1
+      chance: 10.0
+    - material: DIAMOND_CHESTPLATE
+      amount: 1
+      chance: 20.0
+    - material: EXPERIENCE_BOTTLE
+      amount: 16
+      chance: 60.0
+    - material: GOLDEN_CARROT
+      amount: 16
+      chance: 70.0
+    - material: TOTEM_OF_UNDYING
+      amount: 1
+      chance: 12.0
+    - material: BOW
+      amount: 1
+      chance: 25.0
