@@ -11,6 +11,8 @@ import pluginsfix.glowzevsevent.listener.ProtectionListener;
 import pluginsfix.glowzevsevent.service.*;
 import pluginsfix.glowzevsevent.text.Messages;
 
+import java.io.File;
+
 public final class GlowZevsEvent extends JavaPlugin {
 
     private Messages messages;
@@ -27,6 +29,17 @@ public final class GlowZevsEvent extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        File schemDir = new File(getDataFolder(), "schematics");
+        if (!schemDir.exists()) {
+            schemDir.mkdirs();
+        }
+        File schemFile = new File(schemDir, "ship.schem");
+        if (!schemFile.exists()) {
+            try {
+                saveResource("schematics/ship.schem", false);
+            } catch (Exception ignored) {}
+        }
+
         this.messages = new Messages(this);
         this.eventConfig = EventConfig.load(this);
         this.lootConfig = new LootConfig(this);
